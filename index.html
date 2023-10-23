@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    
+    <header class="title-container">
+        <h1>Bookshelf Apps</h1>
+    </header>
+
+    <main class="contents">
+        <div class="side1">
+            <div class="bookInput-container">
+                <div class="bookInputTitle">
+                    <h2>Masukkan Buku</h2>
+                </div>
+                <form id="bookInput-form">
+                    <div class="bookInput-element">
+                        <label for="judulInput">Judul</label>
+                        <input type="text" id="judulInput" class="judulInput" name="judulInput" placeholder="Judul" required>
+                    </div>
+                    <div class="bookInput-element">
+                        <label for="penulis">Penulis</label>
+                        <input type="text" id="penulis" class="penulis" placeholder="Penulis" required>
+                    </div>
+                    <div class="bookInput-element">
+                        <label for="tahun">Tahun</label>
+                        <input type="number" id="tahun" class="tahun" name="tahun" maxlength="4" placeholder="Tahun" required>
+                    </div>
+                    <div class="checkbox-element">
+                        <label for="sudahCheckbox">Sudah Dibaca</label>
+                        <input type="checkbox" class="sudah-checkbox" id="sudahCheckbox">
+                    </div>
+                    <div class="button-element">
+                        <input type="submit" class="button" id="btn" value="Belum Dibaca">
+                    </div>
+                </form>
+            </div>
+
+            <div class="bookSearch-container">
+                <div class="bookSearchTitle">
+                    <h2>Cari Buku</h2>
+                </div>
+                <form id="bookSearch-form">
+                    <div class="bookSearch-element">
+                        <label for="judulSearch">Judul : </label>
+                        <input type="text" id="judulSearch" name="judulSearch" placeholder="Masukkan buku yang anda ingin cari...">
+                        <input type="submit" value="Cari" class="cari-button">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="side2">
+            <div class="unRead-container">
+                <div class="unReadTitle">
+                    <h2>Belum Dibaca</h2>
+                </div>
+                <div class="unRead-list"></div>
+            </div>
+
+            <div class="read-container">
+                <div class="readTitle">
+                    <h2>Sudah Dibaca</h2>
+                </div>
+                <div class="read-list"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
